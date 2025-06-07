@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Raleway:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply font-raleway text-secondary bg-primary;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-playfair text-secondary;
+  }
+  
+  h1 {
+    @apply text-4xl md:text-5xl lg:text-6xl font-bold leading-tight;
+  }
+  
+  h2 {
+    @apply text-3xl md:text-4xl font-semibold leading-tight;
+  }
+  
+  h3 {
+    @apply text-2xl md:text-3xl font-semibold;
+  }
+  
+  h4 {
+    @apply text-xl md:text-2xl font-semibold;
+  }
+  
+  p {
+    @apply text-tertiary leading-relaxed;
+  }
+}
+
+@layer components {
+  .container-custom {
+    @apply container mx-auto px-4 sm:px-6 lg:px-8;
+  }
+  
+  .btn {
+    @apply px-6 py-3 rounded-md font-medium transition-all duration-300 inline-block;
+  }
+  
+  .btn-primary {
+    @apply bg-accent text-white hover:bg-accent/90;
+  }
+  
+  .btn-outline {
+    @apply border border-accent text-accent hover:bg-accent hover:text-white;
+  }
+  
+  .section-title {
+    @apply text-3xl md:text-4xl font-playfair font-semibold mb-2 relative;
+  }
+  
+  .section-title::after {
+    content: "";
+    @apply block w-16 h-1 bg-accent mt-2;
+  }
+  
+  .section-subtitle {
+    @apply text-tertiary text-lg mb-8;
+  }
+}
+
+.animate-fade-up {
+  animation: fadeUp 0.8s ease-out forwards;
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.8s ease-out forwards;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
