@@ -21,8 +21,8 @@ const AboutPreview = () => {
           >
             <div className="relative z-10 overflow-hidden rounded-lg shadow-custom">
               <img 
-                src="https://images.pexels.com/photos/5668859/pexels-photo-5668859.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" 
-                alt="JASA Advogados Team" 
+                src="/src/assets/images/recepcao1.jpg" 
+                alt="JASA Advogados - Recepção" 
                 className="w-full h-full object-cover"
               />
             </div>
@@ -37,19 +37,26 @@ const AboutPreview = () => {
             transition={{ duration: 0.8, delay: 0.4 }}
           >
             <span className="text-accent font-medium">Sobre Nós</span>
-            <h2 className="section-title mb-6">Tradição e Inovação a Serviço dos Seus Direitos</h2>
+            <h2 className="section-title mb-6">Uma Visão Integrada do Direito</h2>
             <p className="mb-6">
-              Fundado em 2005, o JASA Advogados construiu sua reputação com base na excelência jurídica, 
-              atendimento personalizado e resultados consistentes. Nosso escritório reúne profissionais 
-              altamente qualificados e comprometidos com a defesa dos interesses de nossos clientes.
+              Da ideia de formar uma estrutura e organização que pudesse atender de forma mais completa 
+              às diversas demandas da clientela de hoje, cujo pleno atendimento depende do conhecimento 
+              e prática das mais diferentes esferas de Direito, é que surgiu a Jaeger Amarante Sociedade de Advocacia.
             </p>
             <p className="mb-6">
-              Combinamos a tradição da advocacia com uma visão moderna e estratégica do Direito, 
-              oferecendo soluções inovadoras para os desafios jurídicos mais complexos do cenário atual.
+              Fundada em 2009, inicialmente como Jaeger & Alves da Costa Advogados Associados, 
+              posteriormente denominada Jaeger Amarante & Mattos Pontual Advogados Associados, 
+              até receber a nomenclatura atual, nossa sociedade uniu a experiência de seus sócios 
+              em atuações profissionais anteriores em alguns dos mais renomados escritórios do país.
+            </p>
+            <p className="mb-6">
+              Oferecemos uma solução única no mercado: a possibilidade de nossos clientes concentrarem 
+              suas demandas jurídicas em um único estabelecimento advocatício, evitando a pulverização 
+              de causas e garantindo maior eficiência na governança corporativa.
             </p>
             <div className="grid grid-cols-2 gap-4 mb-8">
               <div className="flex flex-col items-center p-4 bg-primary rounded-lg">
-                <span className="text-4xl font-playfair font-bold text-accent">20+</span>
+                <span className="text-4xl font-playfair font-bold text-accent">15+</span>
                 <span className="text-sm text-tertiary">Anos de Experiência</span>
               </div>
               <div className="flex flex-col items-center p-4 bg-primary rounded-lg">
@@ -57,12 +64,12 @@ const AboutPreview = () => {
                 <span className="text-sm text-tertiary">Clientes Satisfeitos</span>
               </div>
               <div className="flex flex-col items-center p-4 bg-primary rounded-lg">
-                <span className="text-4xl font-playfair font-bold text-accent">15+</span>
-                <span className="text-sm text-tertiary">Advogados Especialistas</span>
+                <span className="text-4xl font-playfair font-bold text-accent">10+</span>
+                <span className="text-sm text-tertiary">Áreas de Atuação</span>
               </div>
               <div className="flex flex-col items-center p-4 bg-primary rounded-lg">
-                <span className="text-4xl font-playfair font-bold text-accent">6</span>
-                <span className="text-sm text-tertiary">Áreas de Atuação</span>
+                <span className="text-4xl font-playfair font-bold text-accent">3</span>
+                <span className="text-sm text-tertiary">Modalidades de Contratação</span>
               </div>
             </div>
             <Link to="/sobre" className="btn btn-primary">
